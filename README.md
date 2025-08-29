@@ -48,8 +48,6 @@ cd expense-tracker
 2.**Install dependencies**
 
 npm install
-# or
-yarn install
 
 
 3.**set up env variables**
@@ -64,13 +62,9 @@ NEXT_PUBLIC_DATABASE_URL=
 
 4.**push database schema**
 npm run db:push
-# or
-yarn db:push
 
 5.**Run the development server**
 npm run dev
-# or
-yarn dev
 
 Open http://localhost:3000 in your browser to see the app.
 
