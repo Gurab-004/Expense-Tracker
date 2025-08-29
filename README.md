@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**# Expense Tracker
+
+A full-featured **Expense Tracker** web application built with **Next.js**, **TailwindCSS**, **Drizzle ORM**, and **Clerk** for authentication. Track your budgets, expenses, and visualize your spending.
+
+---
+
+## Features
+
+- User authentication with **Clerk**
+- Add, update, and delete budgets
+- Add and track expenses per budget
+- Visual charts for spending overview using **Recharts**
+- Emoji support for budgets
+- Responsive design with **TailwindCSS**
+
+---
+
+## Tech Stack
+
+- **Next.js 15**
+- **React 19**
+- **TailwindCSS 4**
+- **Drizzle ORM** with Neon database
+- **Clerk** for authentication
+- **Recharts** for data visualization
+- **Moment.js** for date handling
+- **Emoji Picker React** for fun icons
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js >= 20
+- npm or yarn
+- PostgreSQL database (Neon recommended)
+
+### Installation
+
+1.Clone the repository
 
 ```bash
+git clone https://github.com/Gurab-004/expense-tracker.git
+cd expense-tracker
+```
+ 
+2.Install dependencies
+
+npm install
+# or
+yarn install
+
+
+3.set up env variables
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_DATABASE_URL=
+
+4.push database schema
+npm run db:push
+# or
+yarn db:push
+
+5.Run the development server
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to see the app.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Scripts:
+npm run dev – Start development server
+npm run db:push – Push Drizzle ORM migrations
+npm run db:studio – Open Drizzle Studio
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
