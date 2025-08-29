@@ -47,8 +47,9 @@ cd expense-tracker
  
 2.**Install dependencies**
 
+```bash
 npm install
-
+```
 
 3.**set up env variables**
 
@@ -61,10 +62,16 @@ NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
 NEXT_PUBLIC_DATABASE_URL=
 
 4.**push database schema**
+
+```bash
 npm run db:push
+```
 
 5.**Run the development server**
+
+```bash
 npm run dev
+```
 
 Open http://localhost:3000 in your browser to see the app.
 
