@@ -38,21 +38,21 @@ A full-featured **Expense Tracker** web application built with **Next.js**, **Ta
 
 ### Installation
 
-1.Clone the repository
+1.**Clone the repository**
 
 ```bash
 git clone https://github.com/Gurab-004/expense-tracker.git
 cd expense-tracker
 ```
  
-2.Install dependencies
+2.**Install dependencies**
 
 npm install
 # or
 yarn install
 
 
-3.set up env variables
+3.**set up env variables**
 
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
@@ -62,12 +62,12 @@ NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
 NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
 NEXT_PUBLIC_DATABASE_URL=
 
-4.push database schema
+4.**push database schema**
 npm run db:push
 # or
 yarn db:push
 
-5.Run the development server
+5.**Run the development server**
 npm run dev
 # or
 yarn dev
